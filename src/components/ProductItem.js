@@ -14,7 +14,10 @@ class ProductItem extends Component {
                 <center><h3>{this.props.item.title}</h3></center>
                 <p><CurrencyFormat className="formatmoney" thousandSeparator={true} value={this.props.item.price} />.VNĐ</p>
                 <center><img width="200px" height="200px;" src={"Image/" + this.props.item.image}></img></center>
-                <center><button class="btn btn-success" onClick={this.props.onItemClick}>Add</button></center>
+               <center> <div>
+                <button class="btn btn-success" onClick={this.props.onItemClick}>Add</button>
+                <button class="btn btn-warning" >Detail</button>
+                </div></center>
             </div>
 
         );
